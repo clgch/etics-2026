@@ -1,0 +1,33 @@
+[build-system]
+requires = ["uv_build>=0.9.17,<0.10.0"]
+build-backend = "uv_build"
+
+[project]
+name = "PyCirce"
+version = "0.0.1"
+authors = [
+    { name = "Clément Gauchy", email = "clement.gauchy@cea.fr" }
+]
+description = "This repository is a Python and C implementation of the CIRCE methodology for calibration of thermohydraulic correlations"
+readme = "README.md"
+license = { text = "GPLv3+" }
+keywords = ["Python", "CIRCE", "Mixed effects models"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Intended Audience :: Science/Research",
+    "Topic :: Software Development",
+    "Topic :: Scientific/ Engineering",
+]
+requires-python = ">=3.6"
+dependencies = [
+    "numpy",
+    "pandas",
+    "coolprop",
+    "matplotlib",
+    "seaborn",
+    "scipy"
+]
+
+[project.urls]
+Homepage = "https://github.com/clgch/PyCirce"
